@@ -79,7 +79,7 @@
               <img src="../assets/folder.svg" alt="Folder" class="w-12 h-12" />
             </div>
             <div class="folder-name font-semibold">{{ folder.folderName }}</div>
-            <button @click.stop="deleteFolder(folder._id)" class="text-red-500 font-semibold text-sm mt-2">Delete</button>
+            <button @click.stop="deleteFolder(folder._id)" class="text-green-500 font-semibold text-sm mt-2">Delete</button>
           </div>
 
           <!-- Display Files in Current Folder -->
@@ -109,7 +109,7 @@
             <div class="file-name font-semibold">
               <a :href="file.s3Url" target="_blank">{{ file.fileName }}</a>
             </div>
-            <button @click.stop="deleteFile(file._id)" class="text-red-500 font-semibold text-sm mt-2">Delete</button>
+            <button @click.stop="deleteFile(file._id)" class="text-green-500 font-semibold text-sm mt-2">Delete</button>
           </div>
 
           <!-- Display Files in Root -->
@@ -139,7 +139,7 @@
             <div class="file-name font-semibold">
               <a :href="file.s3Url" target="_blank">{{ file.fileName }}</a>
             </div>
-            <button @click.stop="deleteFile(file._id)" class="text-red-500 font-semibold text-sm mt-2">Delete</button>
+            <button @click.stop="deleteFile(file._id)" class="text-green-500 font-semibold text-sm mt-2">Delete</button>
           </div>
 
           <!-- No Files or Folders Available Message -->
@@ -444,7 +444,7 @@
     <style scoped>
     .loader {
       border: 16px solid #f3f3f3; 
-      border-top: 16px solid #4F46E5;  
+      border-top: 16px solid #16A34A;  
       border-radius: 50%;
       width: 120px;
       height: 120px;
